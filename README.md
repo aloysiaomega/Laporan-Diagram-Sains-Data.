@@ -1,4 +1,6 @@
-//==========PERTANYAAN 1=================
+=================
+PERTANYAAN 1
+=================
 
 import pandas as pd
 import matplotlib.pyplot as plt
