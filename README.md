@@ -18,7 +18,9 @@ chart.bar(data['Age'].value_counts().index, data['Age'].value_counts().values)
 
 plt.show()
 
-//==========PERTANYAAN 2=================
+=================
+PERTANYAAN 2
+=================
 import pandas as pd
 import plotly.express as px
 
@@ -30,7 +32,9 @@ df.columns = ['Gender', 'Count']
 chart = px.pie(df, values='Count', names='Gender', title='Perbedaan Skor Introversi antara Pria dan Wanita')
 chart.show()
 
-//==========PERTANYAAN 3=================
+=================
+PERTANYAAN 3
+=================
 import pandas as pd
 import plotly.express as px
 
@@ -43,7 +47,9 @@ chart = px.pie(df, values='Count', names='Personality', title='Hubungan antara T
 
 chart.show()
 
-//==========PERTANYAAN 4=================
+=================
+PERTANYAAN 4
+=================
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -62,7 +68,9 @@ plt.ylabel('Area Minat')
 plt.show()
 
 
-//==========PERTANYAAN 5=================
+=================
+PERTANYAAN 5
+=================
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -83,7 +91,9 @@ plt.legend(title='MBTI')
 plt.show()
 
 
-//==========PERTANYAAN 6=================
+=================
+PERTANYAAN 6
+=================
 import pandas as pd
 import plotly.express as px
 
@@ -96,7 +106,9 @@ chart = px.pie(average_thinking_score, values='Thinking Score', names='Gender', 
 chart.show()
 
 
-//==========PERTANYAAN 7=================
+=================
+PERTANYAAN 7
+=================
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -115,7 +127,9 @@ plt.ylabel('Jumlah')
 plt.show()
 
 
-//==========PERTANYAAN 8=================
+=================
+PERTANYAAN 8
+=================
 import pandas as pd
 import plotly.express as px
 
@@ -128,7 +142,9 @@ chart = px.pie(introversion_education_counts, values='Introversion Score', names
 chart.show()
 
 
-//==========PERTANYAAN 9=================
+=================
+PERTANYAAN 9
+=================
 import pandas as pd
 import plotly.express as px
 
@@ -140,7 +156,9 @@ chart = px.pie(gender_counts, values='Count', names='Gender', title='Distribusi 
 
 chart.show()
 
-//==========PERTANYAAN 10=================
+=================
+PERTANYAAN 10
+=================
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
