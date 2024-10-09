@@ -33,16 +33,18 @@ chart.show()
 PERTANYAAN 3
 =================
 import pandas as pd
-import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('Cleaned_Personality_Types_Dataset.csv')
 
-df = data['Personality'].value_counts().reset_index()
-df.columns = ['Personality', 'Count']
-
-chart = px.pie(df, values='Count', names='Personality', title='Hubungan antara Tingkat Pendidikan dan Tipe Kepribadian MBTI')
-
-chart.show()
+plt.figure(figsize=(12, 8))
+sns.countplot(x='Education', hue='Personality', data=data)
+plt.title('Hubungan antara Tingkat Pendidikan dan Tipe Kepribadian MBTI')
+plt.xlabel('Tingkat Pendidikan')
+plt.ylabel('Jumlah')
+plt.legend(title='MBTI')
+plt.show()
 
 PERTANYAAN 4
 =================
